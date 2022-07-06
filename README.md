@@ -62,7 +62,7 @@ Our code are based on [PyTorch-GAN](https://github.com/eriklindernoren/PyTorch-G
       title={Domain Adaptation for Underwater Image Enhancement via Content and Style Separation}, 
       author={Yu-Wei Chen and Soo-Chang Pei},
       year={2022},
-      eprint={xxxx.xxxxx},
+      eprint={2202.08537},
       archivePrefix={arXiv},
       primaryClass={cs.CV}
 }
