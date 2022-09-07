@@ -57,14 +57,13 @@ Our code are based on [PyTorch-GAN](https://github.com/eriklindernoren/PyTorch-G
 **If there are any inconsistent to paper or coding bug, please feel free to raise an issue and let me know.** 
 ### Citation:
 
-```
-@ARTICLE{9866748,
+```@ARTICLE{9866748, 
 author={Chen, Yu-Wei and Pei, Soo-Chang},
 journal={IEEE Access},
 title={Domain Adaptation for Underwater Image Enhancement via Content and Style Separation},
 year={2022},
-volume={},
+volume={10},
 number={},
-pages={1-1},
+pages={90523-90534},
 doi={10.1109/ACCESS.2022.3201555}}
 ```
