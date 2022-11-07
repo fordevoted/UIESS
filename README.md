@@ -1,7 +1,9 @@
 # UIESS
 
 Official Code for the paper [Domain Adaptation for Underwater Image Enhancement via Content and Style Separation](https://arxiv.org/abs/2202.08537).
-
+<p align="center">
+  <img src="asset/demo.png" width="500"/>
+</p>
 ## Introduction
 In this paper, we propose a domain adaptation framework for underwater image enhancement via content and style separation, we assume image could be disentangled to content and style latent, and image could be clustered to the sub-domain of associated style in latent space, the goal is to build up the mapping between underwater style latent and clean one. Different from prior works of domain adaptation for underwater image enhancement, which target to minimize the latent discrepancy of synthesis and real-world data, we aim to distinguish style latent from different sub-domains. To solve the problem of lacking pair real-world data, we leverage synthesis to real image-to-image translation to obtain pseudo real underwater image pairs for supervised learning, and enhancement can be achieved by input content and clean style latent into generator. Our model provide a user interact interface to adjust different enhanced level by latent manipulation. Experiment on various public real-world underwater benchmarks demonstrate that the proposed framework is capable to perform domain adaptation for underwater image enhancement and outperform various state-of-the-art underwater image enhancement algorithms in quantity and quality.
 <p align="center">
@@ -49,6 +51,8 @@ To run the training code.
 python train.py --data_root $path_to_dataset_root --gpu $gpu_id
 ```
 
+we recommend user select best model from epoch 25 to 35 (default training epoch: 35) offline if your validation set is huge,
+or online selection if validation is small.
 ### Acknowledgements:
 Our code are based on [PyTorch-GAN](https://github.com/eriklindernoren/PyTorch-GAN),
   and some useful functions from
